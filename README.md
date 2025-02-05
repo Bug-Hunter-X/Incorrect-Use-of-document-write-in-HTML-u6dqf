@@ -1,0 +1,3 @@
+# Incorrect Use of document.write in HTML
+
+This repository demonstrates an uncommon error in HTML involving the use of `document.write` after the page has fully loaded.  The `document.write()` method is generally discouraged in modern web development, especially after the page has finished loading because it can overwrite the existing content of the page causing unexpected behavior and layout problems. This example shows how to correct this problem, highlighting better practices for dynamic content updates.
