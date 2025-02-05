@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Correct approach: Use innerHTML or appendChild to add content after the page has loaded
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = 'This is added using createElement and appendChild.';
+    document.getElementById('myDiv').appendChild(newParagraph);
+
+    //Alternative using innerHTML
+    document.getElementById('myDiv').innerHTML += '<p>This is added using innerHTML.</p>';
+  </script>
+</body>
+</html>
